@@ -1,5 +1,10 @@
 # Retail Sales Management System
 
+## Live Application
+
+🔗 **Frontend**: https://truestate-assignment-alpha.vercel.app/  
+🔗 **Backend API**: https://truestateassignment-production.up.railway.app/api
+
 ## Overview
 
 A full-stack web application for managing and analyzing retail sales data with advanced search, filtering, sorting, and pagination capabilities. Built with React and Node.js, the system provides real-time data visualization and efficient query processing through PostgreSQL database integration.
