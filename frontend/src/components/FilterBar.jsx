@@ -16,13 +16,17 @@ const MultiSelectDropdown = ({ label, options, selected, onChange }) => {
   }, []);
 
   const handleToggle = (value) => {
-    // Single select: replace with new value or clear if same value clicked
-    const newSelected = selected.includes(value) ? [] : [value];
+    // Multi-select: toggle value in array
+    const newSelected = selected.includes(value)
+      ? selected.filter(v => v !== value)
+      : [...selected, value];
     onChange(newSelected);
-    setIsOpen(false);
+    // Keep dropdown open for multi-select
   };
 
-  const displayText = label;
+  const displayText = selected.length > 0 
+    ? `${label} (${selected.length})` 
+    : label;
 
   return (
     <div className="multi-select-wrapper" ref={dropdownRef}>
