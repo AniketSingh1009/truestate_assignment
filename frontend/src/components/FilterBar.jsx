@@ -140,11 +140,17 @@ const FilterBar = ({ filters, filterOptions, onChange, onRefresh, sortBy, sortOr
           }}
         >
           <option value="">Date Range</option>
+          <option value="2023-01-01|2023-03-31">Q1 2023</option>
+          <option value="2023-04-01|2023-06-30">Q2 2023</option>
+          <option value="2023-07-01|2023-09-30">Q3 2023</option>
+          <option value="2023-10-01|2023-12-31">Q4 2023</option>
           <option value="2024-01-01|2024-03-31">Q1 2024</option>
           <option value="2024-04-01|2024-06-30">Q2 2024</option>
           <option value="2024-07-01|2024-09-30">Q3 2024</option>
           <option value="2024-10-01|2024-12-31">Q4 2024</option>
-          <option value="2023-01-01|2023-12-31">2023</option>
+          <option value="2022-01-01|2022-12-31">All 2022</option>
+          <option value="2023-01-01|2023-12-31">All 2023</option>
+          <option value="2024-01-01|2024-12-31">All 2024</option>
         </select>
       </div>
 
