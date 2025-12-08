@@ -1,0 +1,14 @@
+{
+  "name": "retail-sales-management",
+  "version": "1.0.0",
+  "description": "Retail Sales Management System with advanced search, filter, sort, and pagination",
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "keywords": ["retail", "sales", "management", "react", "express"],
+  "author": "",
+  "license": "MIT"
+}
